@@ -1,0 +1,74 @@
+/* SmallColorfulCalendar.css */
+.small-colorful-calendar {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    font-size: 0.8em; /* Smaller overall font */
+  }
+  
+  .rbc-toolbar-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px; /* Smaller padding */
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .rbc-toolbar-label-small {
+    font-size: 1.1em; /* Smaller label font */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .rbc-btn-group-small button {
+    background: none;
+    border: 1px solid #ccc;
+    color: #555;
+    padding: 5px 8px; /* Smaller button padding */
+    margin: 0 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8em; /* Smaller button font */
+    transition: background-color 0.3s ease;
+  }
+  
+  .rbc-btn-group-small button:hover {
+    background-color: #eee;
+  }
+  
+  .rbc-header {
+    display: flex;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .rbc-header > div {
+    flex: 1;
+    padding: 5px; /* Smaller header padding */
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+    font-size: 0.85em; /* Smaller header font */
+  }
+  
+  .rbc-date-cell {
+    padding: 5px; /* Smaller date cell padding */
+    text-align: center;
+    color: #333;
+    font-size: 0.8em; /* Smaller date font */
+  }
+  
+
+  
+  .weekend-small {
+    background-color: #f9f9f9;
+    color: #888;
+  }
+  
+  .rbc-date-header-small {
+    padding: 3px;
+    text-align: center;
+    font-size: 0.75em;
+    color: #444;
+  }

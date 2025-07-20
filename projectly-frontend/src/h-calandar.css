@@ -1,0 +1,636 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.projects-container {
+    display: flex;
+    height: 97.7vh;
+}
+
+.sidebar1 {
+    width: 200px; /* Reduced size */
+    background-color: white; /* Changed to white */
+    color: black; /* Change text color to black */
+    padding: 25px;
+    height: 900px;
+}
+.search-bar {
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.recent-projects {
+    margin-top: 100px;
+}
+
+.project-item {
+    background-color: #d1d1d1;
+    margin: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.view-link {
+    color: rgb(13, 13, 13);
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #9a7dbc;
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1255px; /* Full width */
+    position: absolute; /* Allow for fixed positioning */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bar-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 3%;
+}
+img {
+    width: 80px;
+    height: 70px;
+    margin-left: 80px;
+}
+.create-button {
+    background-color: #2f0f57;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h3 {
+    margin-top: 100px;
+    color: white;
+}
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tabs button {
+    padding: 10px 15px;
+    background-color: #9a7dbc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.project-list {
+    margin-top: 50px;
+}
+
+.project-list .project-item {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.attachment-list {
+    margin-top: 20px;
+}
+  
+.attachment-file {
+    display: flex; /* Use flexbox to align items in a row */
+    gap: 20px; /* Space between the upload boxes */
+}
+  
+.upload-box {
+    background-color: white; /* White background for the upload box */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the content */
+    flex: 1; /* Allow boxes to grow equally */
+}
+  
+.file-input {
+    margin-top: 10px; /* Space between the title and the file input */
+}
+
+/* Board code CSS */
+.boards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board-column {
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Calendar Section */
+.calendar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #9a7dbc;
+    color: white;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.calendar-day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100px; /* Adjustable height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.day-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.event {
+    background-color: #E3F2FD;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+.center-text {
+
+    color: white;
+}
+.search-button {
+    background-color: #2f0f57;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 850px;
+}
+
+/* Add these styles to your h-calandar.css */
+
+.project-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .pro-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .member-info {
+    flex: 1;
+  }
+  
+  .member-info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+  }
+  
+  .member-info h6 {
+    margin: 0 0 5px 0;
+    color: #666;
+  }
+  
+  .member-info p {
+    margin: 0;
+    color: #888;
+    font-size: 0.9em;
+  }
+  
+  .member-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .communicate-button, .track-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .communicate-button {
+    background-color: #0052cc;
+    color: white;
+  }
+  
+  .communicate-button:hover {
+    background-color: #0065ff;
+  }
+  
+  .track-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .track-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+  }
+  
+  .modal h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .send-button, .cancel-button, .close-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .send-button {
+    background-color: #0052cc;
+    color: white;
+  }
+  
+  .send-button:hover {
+    background-color: #0065ff;
+  }
+  
+  .cancel-button, .close-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .cancel-button:hover, .close-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .progress-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .stat-item {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .stat-item h4 {
+    margin: 0 0 5px 0;
+    color: #555;
+  }
+  
+  .stat-item p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .recent-tasks {
+    margin: 15px 0;
+  }
+  
+  .recent-tasks ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-tasks li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .loading, .error {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  /* Project List Specific Styles */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.member-details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.member-details h4 {
+  margin: 0 0 5px 0;
+}
+
+.member-details h6 {
+  margin: 0 0 5px 0;
+  color: #666;
+}
+
+.member-role {
+  margin: 0;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.member-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.communicate-button, .track-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.communicate-button {
+  background-color: #0052cc;
+  color: white;
+}
+
+.communicate-button:hover {
+  background-color: #0065ff;
+}
+
+.track-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.track-button:hover {
+  background-color: #218838;
+}
+
+/* Modal Styles */
+.communication-modal,
+.progress-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.modal-content textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.send-button, .cancel-button, .close-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-button {
+  background-color: #0052cc;
+  color: white;
+}
+
+.send-button:hover {
+  background-color: #0065ff;
+}
+
+.cancel-button, .close-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-button:hover, .close-button:hover {
+  background-color: #5a6268;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-item span {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.stat-item strong {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.loading, .error {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.error {
+  color: #dc3545;
+}
+.task-form-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.message.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.message.error {
+  background-color: #f2dede;
+  color: #a94442;
+}

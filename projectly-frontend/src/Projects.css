@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.projects-container {
+    display: flex;
+    height: 97.7vh;
+}
+/* Projects.css */
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .project-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .project-info h4 {
+    margin: 0 0 5px 0;
+  }
+  
+  .project-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .project-info small {
+    color: #999;
+    font-size: 0.8em;
+  }
+  
+  .view-button {
+    background: #0052cc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .view-button:hover {
+    background: #0065ff;
+  }
+.sidebar {
+    width: 200px; /* Reduced size */
+    background-color: white; /* Changed to white */
+    color: black; /* Change text color to black */
+    padding: 25px;
+}
+
+.recent-projects {
+    margin-top: 90px;
+}
+
+.project-item {
+    background-color: #F5F5F5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.view-link {
+    color: rgb(13, 13, 13);
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #9a7dbc;
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1255px; /* Full width */
+    position: absolute; /* Allow for fixed positioning */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bar-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 3%;
+}
+img {
+    width: 80px;
+    height: 70px;
+    margin-left: 80px;
+}
+.create-button {
+    background-color: #2f0f57;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h3 {
+    margin-top: 100px;
+    color: white;
+}
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tabs button {
+    padding: 10px 15px;
+    background-color: #9a7dbc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.project-list {
+    margin-top: 50px;
+}
+
+.project-list .project-item {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.attachment-list {
+    margin-top: 20px;
+}
+  
+.attachment-file {
+    display: flex; /* Use flexbox to align items in a row */
+    gap: 20px; /* Space between the upload boxes */
+}
+  
+.upload-box {
+    background-color: white; /* White background for the upload box */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the content */
+    flex: 1; /* Allow boxes to grow equally */
+}
+  
+.file-input {
+    margin-top: 10px; /* Space between the title and the file input */
+}
+
+/* Board code CSS */
+.boards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board-column {
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Calendar Section */
+.calendar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #9a7dbc;
+    color: white;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.calendar-day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100px; /* Adjustable height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.day-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.event {
+    background-color: #E3F2FD;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    color: #333;
+}
+.pro-pic {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* Add these styles to your existing CSS */
+.multi-select {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .view-button, .message-button, .new-message-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .view-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .message-button, .new-message-button {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .active-tab {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
+  
+  .user-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .communication-item.sent {
+    background-color: #e3f2fd;
+  }
+  
+  .communication-item.received {
+    background-color: #f5f5f5;
+  }

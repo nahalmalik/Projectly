@@ -1,0 +1,43 @@
+/* SignInRolePage.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #9a7dbc; /* Light gray background */
+}
+.role-selection-container {
+    background-color: #f2f0f5; /* Light purple background */
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 200px; 
+    margin-left: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.role-selection-container h1 {
+    color: #5a4e7c; /* Darker purple for the heading */
+}
+
+.role-select {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #5a4e7c; /* Border color */
+    width: 100%; /* Full width */
+    height: 30px;
+}
+
+.role-submit-button {
+    padding: 10px 20px;
+    background-color: #5a4e7c; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.role-submit-button:hover {
+    background-color: #4a3e6b; /* Darker shade on hover */
+}
